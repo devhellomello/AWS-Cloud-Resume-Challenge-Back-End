@@ -3,8 +3,9 @@ phases:
   install:
     runtime-versions:
       python: 3.11
-  pre-build:
-      - echo "Nothing to add here"
+  pre_build:
+    commands:
+      - echo "Nothing to add for pre-build"
   build:
     commands:
       - echo "Zipping deployment package..."
